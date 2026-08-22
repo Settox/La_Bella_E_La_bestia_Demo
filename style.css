@@ -82,7 +82,7 @@ body.modal-open { overflow: hidden; }
   border: 0;
   background: transparent;
   padding: 12px 15px;
-  color: #d9ded8;
+  color: var(--ink);
   font-weight: 600;
   cursor: pointer;
   border-radius: 999px;
