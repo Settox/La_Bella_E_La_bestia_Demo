@@ -346,9 +346,9 @@ footer { background: #0d1110; color: #cdd8d1; padding: 40px 0 20px; border-top: 
     top: 82px;
     left: 0;
     right: 0;
-    background: var(--paper);
+    background: var(--ink);
     padding: 12px 20px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid rgba(135, 185, 192, .2);
     flex-direction: column;
   }
   .nav-tabs.open { display: flex; }
