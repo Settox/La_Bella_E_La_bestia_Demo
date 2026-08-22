@@ -1,0 +1,377 @@
+/* ==========================================================================
+   La Bella e La Bestia — Lierna
+   Tema: legno scuro / verde / azzurro lago
+   ========================================================================== */
+
+[hidden] { display: none !important; }
+
+:root {
+  --wood: #171714;
+  --wood2: #25251f;
+  --green: #365b48;
+  --green2: #6f9479;
+  --lake: #3e7f91;
+  --lake2: #87b9c0;
+  --cream: #e9e4d5;
+  --ink: #17251f;
+  --paper: #fffdf9;
+  --accent: #b47a45;
+  --muted: #6c7779;
+  --line: #ded8cc;
+  --whatsapp: #25d366;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--wood);
+  color: var(--cream);
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.65;
+}
+body.modal-open { overflow: hidden; }
+
+/* -------------------- Header / navigazione -------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(18, 20, 17, .96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(135, 185, 192, .2);
+}
+.site-header:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .12;
+  background: repeating-linear-gradient(8deg, transparent 0 7px, rgba(170, 130, 80, .15) 8px, transparent 10px 18px);
+}
+.nav-wrap {
+  max-width: 1180px;
+  margin: auto;
+  min-height: 82px;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: transparent;
+}
+.brand img { display: none; }
+.brand:after {
+  content: "LA BELLA\AE LA BESTIA";
+  white-space: pre;
+  text-align: center;
+  display: block;
+  color: #e8e1cc;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.05;
+  letter-spacing: .08em;
+}
+.nav-tabs {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.tab {
+  border: 0;
+  background: transparent;
+  padding: 12px 15px;
+  color: #d9ded8;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 999px;
+}
+.tab:hover, .tab.active { background: var(--green); color: #fff; }
+.menu-btn { display: none; border: 0; background: none; font-size: 28px; color: var(--ink); }
+.panel { display: none; background: transparent; }
+.panel.active { display: block; }
+
+/* -------------------- Hero -------------------- */
+.hero {
+  min-height: 610px;
+  background-image: linear-gradient(90deg, rgba(8, 13, 11, .94), rgba(14, 47, 49, .52)), url("proxy-hero.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-content { max-width: 1180px; width: 100%; margin: auto; padding: 80px 24px; color: #fff; }
+.hero h1, .empty-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: 1.02;
+  margin: 10px 0;
+  color: #e8e1cc;
+}
+.hero p:not(.eyebrow) { font-size: 20px; max-width: 600px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: var(--accent); margin: 0 0 8px; }
+.hero .eyebrow { color: #f0c995; }
+.lead-description { font-size: 1.08rem; max-width: 780px; color: #d8ddd5; }
+
+/* -------------------- Bottoni -------------------- */
+.btn {
+  display: inline-block;
+  background: var(--lake);
+  color: #fff;
+  text-decoration: none;
+  border: 0;
+  padding: 13px 21px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.btn.dark { background: #e8e1cc; color: #1a2620; }
+.btn.whatsapp { background: #348b60; color: #fff; }
+
+/* -------------------- Layout generico -------------------- */
+.container { max-width: 1180px; margin: auto; padding: 78px 24px; }
+.grid-2 { display: grid; grid-template-columns: 1.3fr .7fr; gap: 70px; }
+.grid-2 h2, .container h2 { font-family: 'Playfair Display', serif; font-size: 42px; line-height: 1.15; margin: 6px 0 18px; color: #e8e1cc; }
+.facts { display: none; }
+.section-head { display: flex; align-items: end; justify-content: space-between; margin-bottom: 20px; }
+.section-head h2, .contact-grid h2 { color: #e8e1cc; }
+.text-link, .contact-card a { color: var(--lake2); font-weight: 700; text-decoration: none; }
+
+/* -------------------- Punti di interesse / posizione -------------------- */
+.location-highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+.location-highlights > div {
+  background: linear-gradient(145deg, #20241e, #29382f);
+  border: 1px solid rgba(135, 185, 192, .14);
+  padding: 20px;
+  border-radius: 9px;
+}
+.location-highlights strong { display: block; font-family: 'Playfair Display', serif; font-size: 20px; color: #e8e1cc; line-height: 1.2; }
+.location-highlights small { display: block; color: #9db2aa; margin-top: 7px; font-size: 12px; }
+.mini-label { display: block; color: var(--lake2); font-size: 10px; letter-spacing: .16em; font-weight: 800; margin-bottom: 9px; }
+
+.airport-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+.airport-strip div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid rgba(135, 185, 192, .15);
+  padding: 12px 4px;
+  color: #b9c8c0;
+  font-size: 13px;
+}
+.airport-strip strong { color: #e8e1cc; font-family: 'Playfair Display', serif; font-size: 18px; white-space: nowrap; }
+
+/* -------------------- Scheda contatti -------------------- */
+.contact-card {
+  background: linear-gradient(145deg, #20241e, #243b31);
+  border: 1px solid rgba(135, 185, 192, .16);
+  padding: 35px;
+  border-radius: 10px;
+  color: var(--cream);
+}
+.contact-card h3 { font-family: 'Playfair Display', serif; font-size: 30px; margin-top: 0; color: #e8e1cc; }
+.contact-card a:not(.btn) { display: block; color: var(--lake2); font-weight: 600; margin: 9px 0; }
+.contact-card p { font-size: 13px; color: #aebdb5; }
+.contact-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* -------------------- Mappa -------------------- */
+.map-wrap {
+  padding-top: 0;
+  background: linear-gradient(180deg, #171714, #1c2923);
+  border-top: 1px solid rgba(135, 185, 192, .08);
+  border-bottom: 1px solid rgba(135, 185, 192, .08);
+}
+iframe { width: 100%; height: 430px; border: 0; border-radius: 10px; }
+.map-consent {
+  min-height: 430px;
+  border-radius: 10px;
+  border: 1px solid rgba(135, 185, 192, .18);
+  background: radial-gradient(circle at 70% 25%, rgba(62, 127, 145, .22), transparent 35%), linear-gradient(145deg, #1b211d, #203b32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px;
+  color: #e8e1cc;
+}
+.map-consent p { max-width: 600px; color: #bccac2; }
+
+/* -------------------- Pannelli vuoti (appartamenti in preparazione) -------------------- */
+.empty-panel {
+  min-height: calc(100vh - 82px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #171714, #20372e 55%, #183e47);
+}
+.empty-panel.active { display: flex; }
+.empty-content {
+  padding: 60px 24px;
+  background: var(--wood2);
+  border: 1px solid rgba(135, 185, 192, .18);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .5);
+}
+.empty-content p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
+
+/* -------------------- Footer -------------------- */
+footer { background: #0d1110; color: #cdd8d1; padding: 40px 0 20px; border-top: 1px solid rgba(135, 185, 192, .2); }
+.footer-main { display: flex; flex-direction: column; gap: 5px; }
+.footer-inner { padding-top: 0; padding-bottom: 25px; display: flex; justify-content: space-between; }
+.footer-links { display: flex; align-items: flex-start; gap: 22px; }
+.footer-link { border: 0; background: none; color: #b9d6d8; padding: 0; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.footer-link:hover { color: #f0c995; }
+.copyright { border-top: 1px solid rgba(255, 255, 255, .15); padding: 18px 24px 0; text-align: center; font-size: 12px; color: #9eafb2; }
+
+/* -------------------- Modali (contatti, privacy) -------------------- */
+.modal { display: none; position: fixed; inset: 0; z-index: 100; }
+.modal.open { display: block; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(3, 8, 7, .82); backdrop-filter: blur(5px); }
+.modal-box {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(145deg, #1b1d19, #23352d 65%, #173a42);
+  color: #e8e1cc;
+  width: min(620px, calc(100% - 32px));
+  max-height: 90vh;
+  overflow: auto;
+  margin: 5vh auto;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(135, 185, 192, .18);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, .65);
+}
+.modal-box h2 { font-family: 'Playfair Display', serif; font-size: 38px; margin: 5px 0 20px; color: #e8e1cc; }
+.modal-box h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin: 28px 0 8px; color: #e8e1cc; }
+.modal-box p { color: #c7d0c9; }
+.modal-box a { color: #9fd0d6; font-weight: 600; }
+.modal-close { position: absolute; right: 15px; top: 10px; border: 0; background: none; font-size: 34px; line-height: 1; color: #b9c8c0; cursor: pointer; }
+
+.legal { width: min(900px, calc(100% - 32px)); font-size: 14px; }
+.legal h2 { margin-top: 20px; }
+.legal-logo { width: 120px; max-height: 70px; object-fit: contain; }
+.legal hr { border: 0; border-top: 1px solid rgba(135, 185, 192, .2); margin: 40px 0; }
+.policy-date { border-top: 1px solid rgba(135, 185, 192, .2); padding-top: 20px; font-weight: 600; color: #9db2aa; }
+
+/* -------------------- Banner e pannello cookie -------------------- */
+.cookie-banner {
+  position: fixed;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 200;
+  background: linear-gradient(145deg, #171b18, #21392f 65%, #173b43);
+  color: #e8e1cc;
+  border: 1px solid rgba(135, 185, 192, .28);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .55);
+}
+.cookie-banner p { margin: 5px 0 0; color: #c4d0c9; font-size: 13px; }
+.cookie-link { border: 0; background: none; color: #9fd0d6; text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+.cookie-actions { display: flex; gap: 9px; flex-wrap: wrap; justify-content: flex-end; }
+.cookie-btn { border: 1px solid rgba(135, 185, 192, .3); border-radius: 6px; padding: 10px 14px; cursor: pointer; font-weight: 700; }
+.cookie-btn.primary { background: #3e7f91; color: #fff; border-color: #3e7f91; }
+.cookie-btn.secondary { background: transparent; color: #e8e1cc; }
+
+.cookie-settings { position: fixed; inset: 0; z-index: 210; background: rgba(3, 8, 7, .82); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.cookie-settings-box {
+  position: relative;
+  width: min(650px, 100%);
+  background: linear-gradient(145deg, #1b1d19, #23352d 65%, #173a42);
+  color: #e8e1cc;
+  border: 1px solid rgba(135, 185, 192, .2);
+  border-radius: 14px;
+  padding: 34px;
+  box-shadow: 0 25px 90px rgba(0, 0, 0, .7);
+}
+.cookie-settings-box h2 { font-family: Georgia, serif; font-size: 34px; }
+.cookie-settings-box > p { color: #c7d0c9; }
+.cookie-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 1px solid rgba(135, 185, 192, .15); }
+.cookie-row small { display: block; color: #9db2aa; margin-top: 4px; }
+.cookie-row input { accent-color: #3e7f91; }
+
+.cookie-reopen { position: fixed; left: 14px; bottom: 14px; z-index: 150; }
+.cookie-reopen button {
+  background: #173a42;
+  color: #dce9e6;
+  border: 1px solid rgba(135, 185, 192, .3);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* -------------------- Sezioni "Dintorni" / "Come arrivare" -------------------- */
+.travel-section, .nearby-section {
+  padding: 90px 7%;
+  max-width: 1250px;
+  margin: auto;
+  background: linear-gradient(135deg, #191a16, #243b31 55%, #193c44);
+  color: #e8e1cc;
+}
+.travel-section { max-width: none; }
+.section-heading { margin-bottom: 35px; }
+.section-heading span { font-size: .72rem; letter-spacing: .16em; font-weight: 800; opacity: .55; }
+.section-heading h2 { font-family: Georgia, serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 500; line-height: 1.05; margin: 8px 0; }
+.travel-grid, .nearby-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.travel-grid article, .nearby-grid article {
+  background: #25251f;
+  color: #e5e4d8;
+  border: 1px solid rgba(135, 185, 192, .15);
+  border-radius: 20px;
+  padding: 28px;
+}
+.travel-grid h3, .nearby-grid h3 { font-family: Georgia, serif; font-weight: 500; font-size: 1.4rem; margin-top: 0; }
+.nearby-grid ul { padding-left: 20px; margin-top: 8px; margin-bottom: 24px; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 850px) {
+  .nav-wrap { justify-content: space-between; }
+  .menu-btn { display: block; }
+  .nav-tabs {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+  }
+  .nav-tabs.open { display: flex; }
+  .tab { text-align: left; }
+  .grid-2 { grid-template-columns: 1fr; gap: 35px; }
+  .hero { min-height: 560px; }
+  .container { padding: 55px 20px; }
+  .footer-inner { flex-direction: column; gap: 20px; }
+  .travel-section, .nearby-section { padding: 65px 6%; }
+  .travel-grid, .nearby-grid { grid-template-columns: 1fr; }
+  .location-highlights, .airport-strip { grid-template-columns: 1fr; }
+  .airport-strip div { padding: 11px 0; }
+  .lead-description { font-size: 1rem; }
+  .cookie-banner { left: 10px; right: 10px; bottom: 10px; display: block; }
+  .cookie-actions { margin-top: 12px; justify-content: flex-start; }
+  .cookie-btn { flex: 1; }
+  .cookie-row { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 520px) {
+  .brand img { width: 95px; }
+  .hero h1, .empty-content h1 { font-size: 50px; }
+  .container h2 { font-size: 34px; }
+  .modal-box { padding: 30px 22px; }
+  .footer-links { flex-direction: column; gap: 10px; }
+}
