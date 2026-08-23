@@ -16,9 +16,16 @@
     <button class="menu-btn" aria-label="Apri menu" aria-expanded="false">☰</button>
     <nav class="nav-tabs" aria-label="Navigazione principale">
       <button class="tab active" data-tab="home">Home & Contatti</button>
+      <button class="tab" data-tab="struttura">La Struttura</button>
       <button class="tab" data-tab="tom">Appartamento 1</button>
       <button class="tab" data-tab="lilli">Appartamento 2</button>
       <button class="tab" data-tab="appartamento3">Appartamento 3</button>
+      <label class="theme-toggle" title="Cambia tema">
+        <span class="theme-icon">☀️</span>
+        <span class="theme-switch"></span>
+        <input type="checkbox" id="theme-switch-input" aria-label="Attiva tema scuro">
+        <span class="theme-icon">🌙</span>
+      </label>
     </nav>
   </div>
 </header>
@@ -29,20 +36,34 @@
     <div class="hero-content">
       <p class="eyebrow">Lierna · Lago di Como</p>
       <h1>La Bella e La Bestia</h1>
-      <p>Guesthouse e appartamenti nel cuore di Lierna, con giardino, WiFi gratuito e appartamenti climatizzati.</p>
-      <a class="btn" href="https://www.booking.com/hotel/it/la-bella-e-la-bestia-lierna.it.html?aid=356980&label=gog235jc-10CAsocUIbbGEtYmVsbGEtZS1sYS1iZXN0aWEtbGllcm5hSDNYA2hxiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK586fUBsACAdICJDM2MTUxNzk3LTZiZTEtNGFiOS1iN2VjLTAwZmE2YTZjN2YzY9gCAeACAQ&sid=4ab836ef29e3a5e1187789e2cdfc59e6&dist=0&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&" target="_blank" rel="noopener">Prenota il tuo appartamento</a>
+      <p>Appartamenti accoglienti a pochi passi dal Lago di Como, nel cuore di Lierna.</p>
+      <a class="btn" href="https://www.booking.com/hotel/it/la-bella-e-la-bestia-lierna.it.html?aid=356980&label=gog235jc-10CAsocUIbbGEtYmVsbGEtZS1sYS1iZXN0aWEtbGllcm5hSDNYA2hxiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK586fUBsACAdICJDM2MTUxNzk3LTZiZTEtNGFiOS1iN2VjLTAwZmE2YTZjN2YzY9gCAeACAQ&sid=4ab836ef29e3a5e1187789e2cdfc59e6&dist=0&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&" target="_blank" rel="noopener">Verifica disponibilità</a>
     </div>
   </div>
+
+  <section class="container overview-section" aria-labelledby="overview-title">
+    <div class="section-head"><div><p class="eyebrow">Scegli il tuo soggiorno</p><h2 id="overview-title">Trova lo spazio giusto per te</h2></div></div>
+    <div class="overview-grid">
+      <article><span class="overview-number">01</span><h3>Due camere</h3><p>Fino a 6 ospiti, con quattro letti singoli, divano letto, cucina e balcone.</p><button type="button" class="text-link overview-link tab-link" data-tab="tom">Vedi dettagli →</button></article>
+      <article><span class="overview-number">02</span><h3>Appartamento 2</h3><p>Per 2 ospiti, con una camera, due letti singoli, cucina e bagno privato.</p><button type="button" class="text-link overview-link tab-link" data-tab="lilli">Vedi dettagli →</button></article>
+      <article><span class="overview-number">03</span><h3>Appartamento 3</h3><p>Per 2 ospiti, con una camera e i comfort essenziali per vivere Lierna in libertà.</p><button type="button" class="text-link overview-link tab-link" data-tab="appartamento3">Vedi dettagli →</button></article>
+    </div>
+  </section>
+
+  <section class="nearby-section" aria-labelledby="nearby-title">
+    <div class="section-heading"><span>DA SCOPRIRE</span><h2 id="nearby-title">Nei dintorni</h2></div>
+    <div class="nearby-grid"><article><h3>Ville sul lago</h3><ul><li>Villa Monastero · 7 km</li><li>Villa Melzi · 8 km</li><li>Villa Carlotta · 9 km</li><li>Villa del Balbianello · 18 km</li></ul></article><article><h3>Giornate all'aperto</h3><ul><li>Lago di Como · a pochi passi</li><li>Lido di Mandello · 5 km</li><li>Spiaggia Parco Ulisse Guzzi · 8 km</li></ul></article><article><h3>Dove mangiare</h3><ul><li>La Breva · 800 m</li><li>Sole e Luna · 850 m</li><li>Tizio Caio e Sempione · 1 km</li></ul></article></div>
+  </section>
 
   <div class="container grid-2 contact-grid">
     <div>
       <p class="eyebrow">Dove siamo</p>
-      <h2>Una posizione perfetta:</h2>
-      <p class="lead-description">La Bella e La Bestia si trova a Lierna, direttamente sul Lago di Como, in una posizione ideale per vivere il lago senza rinunciare alla comodità dei collegamenti. La struttura è in Via alla Volta 10, nel centro di Lierna, con il lago proprio accanto e la stazione ferroviaria facilmente raggiungibile.</p>
+      <h2>Comoda da raggiungere</h2>
+      <p class="lead-description">Via alla Volta 10, nel centro di Lierna: il lago è vicino e la stazione permette di spostarsi facilmente.</p>
       <div class="location-highlights">
-        <div><span class="mini-label">LAGO</span><strong>Direttamente sul Lago di Como</strong><small>Il lago è proprio accanto alla struttura</small></div>
-        <div><span class="mini-label">STAZIONE</span><strong>Lierna · 1,2 km</strong><small>Stazione ferroviaria di Lierna</small></div>
-        <div><span class="mini-label">SECONDA STAZIONE</span><strong>Olcio · 2,8 km</strong><small>Stazione ferroviaria di Olcio</small></div>
+        <div><span class="mini-label">LAGO</span><strong>A pochi passi</strong><small>Lago di Como</small></div>
+        <div><span class="mini-label">TRENO</span><strong>Lierna · 1,2 km</strong><small>Stazione ferroviaria</small></div>
+        <div><span class="mini-label">TRENO</span><strong>Olcio · 2,8 km</strong><small>Seconda stazione vicina</small></div>
       </div>
       <div class="airport-strip">
         <div><span>Aeroporto di Lugano Agno</span><strong>51 km</strong></div>
@@ -54,7 +75,7 @@
       <h3>Contatti</h3>
       <a href="tel:+393516576435">+39 351 657 6435</a>
       <a href="mailto:ilgattoelavolpelierna@gmail.com">ilgattoelavolpelierna@gmail.com</a>
-      <p>Licenze: 097043-LIM-00005 · 097043-LIM-00006 · 097043-LIM-00007<br>CIN: IT097043B4OR9DH7OO · IT097043B4POEXY7CK · IT097043B4TN3LLPCE</p>
+      <p>Per informazioni, disponibilità o richieste particolari, contattaci direttamente.</p>
       <div class="contact-actions">
         <a class="btn whatsapp" href="https://wa.me/393516576435" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn dark" href="mailto:ilgattoelavolpelierna@gmail.com?subject=Richiesta%20informazioni">Email</a>
@@ -68,9 +89,47 @@
   </div>
 </section>
 
-<section id="tom" class="panel empty-panel"><div class="empty-content"><p class="eyebrow">Appartamento 1</p><h1>Appartamento 1</h1><p>Questa sezione è in preparazione.</p></div></section>
-<section id="lilli" class="panel empty-panel"><div class="empty-content"><p class="eyebrow">Appartamento 2</p><h1>Appartamento 2</h1><p>Questa sezione è in preparazione.</p></div></section>
-<section id="appartamento3" class="panel empty-panel"><div class="empty-content"><p class="eyebrow">Appartamento 3</p><h1>In arrivo</h1><p>Questa sezione è in preparazione.</p></div></section>
+<section id="struttura" class="panel structure-panel">
+  <div class="apartment-intro"><div class="container"><p class="eyebrow">La struttura</p><h1>Spazi da vivere</h1><p>Un cortile fiorito e un'accogliente area relax completano il soggiorno a La Bella e La Bestia.</p></div></div>
+  <div class="container apartment-gallery-section"><div class="section-head"><div><p class="eyebrow">Galleria della struttura</p><h2>Cortile, giardino e dettagli</h2></div></div><div class="photo-gallery structure-gallery">
+    <figure><img src="images/cortile-ingressi.jpg" alt="Ingresso degli appartamenti e cortile" loading="lazy"><figcaption>Il cortile</figcaption></figure><figure><img src="images/ingresso-struttura.jpg" alt="Ingresso della struttura La Bella e La Bestia" loading="lazy"><figcaption>L'ingresso</figcaption></figure><figure><img src="images/ingresso-vite.jpg" alt="Ingresso della struttura con la vite" loading="lazy"><figcaption>La vite all'ingresso</figcaption></figure><figure><img src="images/cortile-fiori.jpg" alt="Fiori nel cortile" loading="lazy"><figcaption>Il cortile fiorito</figcaption></figure><figure><img src="images/cortile-scala.jpg" alt="Scala e area relax" loading="lazy"><figcaption>Area esterna</figcaption></figure><figure><img src="images/cortile-aiuola.jpg" alt="Aiuola fiorita" loading="lazy"><figcaption>Giardino</figcaption></figure><figure><img src="images/cortile-salottino.jpg" alt="Salottino esterno" loading="lazy"><figcaption>Salottino esterno</figcaption></figure><figure><img src="images/bagno-lavabo.jpg" alt="Lavabo di un bagno" loading="lazy"><figcaption>Dettagli degli interni</figcaption></figure><figure><img src="images/bagno-doccia.jpg" alt="Bagno con doccia" loading="lazy"><figcaption>Bagno</figcaption></figure><figure><img src="images/camera-letto.jpg" alt="Camera da letto" loading="lazy"><figcaption>Camera</figcaption></figure><figure><img src="images/bagno-dettaglio.jpg" alt="Dettaglio del bagno" loading="lazy"><figcaption>Comfort</figcaption></figure><figure><img src="images/camera-tv.jpg" alt="Camera con TV e aria condizionata" loading="lazy"><figcaption>TV e aria condizionata</figcaption></figure><figure class="photo-gallery-wide"><img src="images/camera-panoramica.jpg" alt="Vista panoramica della camera" loading="lazy"><figcaption>Gli interni</figcaption></figure><figure><img src="images/cortile-relax.jpg" alt="Area relax esterna" loading="lazy"><figcaption>Relax all'aperto</figcaption></figure>
+  </div></div>
+</section>
+
+<section id="tom" class="panel apartment-panel">
+  <div class="apartment-intro"><div class="container"><p class="eyebrow">Appartamento 1</p><h1>Appartamento 1</h1><p>Scopri gli spazi della struttura e dell'appartamento.</p><div class="license-badges"><span><strong>CIN</strong> IT097043B4TN3LLPCE</span><span><strong>CIR</strong> 097043-LIM-00005</span></div></div></div>
+  <div class="container stay-details"><div><p class="eyebrow">Servizi</p><h2>Comfort per il tuo soggiorno</h2><ul class="amenities"><li>WiFi gratuito</li><li>Aria condizionata e riscaldamento</li><li>Bagno privato</li><li>Angolo cottura con utensili</li><li>TV a schermo piatto</li><li>Giardino e area esterna</li></ul></div><div class="rules-card"><p class="eyebrow">Informazioni utili</p><h3>Regole del soggiorno</h3><p>Check-in dalle 16:00 alle 18:00, da comunicare in anticipo. Bambini di ogni età benvenuti; culla gratuita su richiesta da 0 a 3 anni, soggetta a disponibilità.</p><p>Non sono ammessi fumatori, feste o animali. Le condizioni di cancellazione dipendono dalla soluzione e dalle date scelte.</p><a class="btn" href="https://www.booking.com/hotel/it/la-bella-e-la-bestia-lierna.it.html" target="_blank" rel="noopener">Verifica disponibilità</a></div></div>
+  <div class="container apartment-gallery-section"><div class="section-head"><div><p class="eyebrow">Galleria fotografica</p><h2>Gli spazi</h2></div><p class="gallery-note">Cortile, camera e bagno</p></div><div class="photo-gallery">
+    <figure><img src="images/cortile-ingressi.jpg" alt="Ingresso degli appartamenti e cortile" loading="lazy"><figcaption>Il cortile</figcaption></figure>
+    <figure><img src="images/ingresso-struttura.jpg" alt="Ingresso della struttura La Bella e La Bestia" loading="lazy"><figcaption>L'ingresso</figcaption></figure>
+    <figure><img src="images/ingresso-vite.jpg" alt="Ingresso della struttura con la vite" loading="lazy"><figcaption>Dettagli dell'ingresso</figcaption></figure>
+    <figure><img src="images/cortile-fiori.jpg" alt="Fiori nel cortile della struttura" loading="lazy"><figcaption>Il cortile fiorito</figcaption></figure>
+    <figure><img src="images/cortile-scala.jpg" alt="Scala e area relax nel cortile" loading="lazy"><figcaption>Area esterna</figcaption></figure>
+    <figure><img src="images/cortile-aiuola.jpg" alt="Aiuola fiorita nell'area esterna" loading="lazy"><figcaption>Giardino</figcaption></figure>
+    <figure><img src="images/cortile-salottino.jpg" alt="Salottino esterno con ombrellone" loading="lazy"><figcaption>Salottino esterno</figcaption></figure>
+    <figure><img src="images/bagno-lavabo.jpg" alt="Lavabo del bagno" loading="lazy"><figcaption>Bagno</figcaption></figure>
+    <figure><img src="images/bagno-doccia.jpg" alt="Bagno con doccia e set di asciugamani" loading="lazy"><figcaption>Bagno con doccia</figcaption></figure>
+    <figure><img src="images/camera-letto.jpg" alt="Camera da letto matrimoniale" loading="lazy"><figcaption>Camera da letto</figcaption></figure>
+    <figure><img src="images/bagno-dettaglio.jpg" alt="Dettaglio del lavabo del bagno" loading="lazy"><figcaption>Dettagli del bagno</figcaption></figure>
+    <figure><img src="images/camera-tv.jpg" alt="Camera con televisione e aria condizionata" loading="lazy"><figcaption>Comfort in camera</figcaption></figure>
+    <figure class="photo-gallery-wide"><img src="images/camera-panoramica.jpg" alt="Vista panoramica della camera matrimoniale" loading="lazy"><figcaption>La camera</figcaption></figure>
+    <figure><img src="images/cortile-relax.jpg" alt="Area relax esterna nel cortile" loading="lazy"><figcaption>Relax all'aperto</figcaption></figure>
+  </div></div>
+</section>
+<section id="lilli" class="panel apartment-panel">
+  <div class="apartment-intro"><div class="container"><p class="eyebrow">Appartamento 2</p><h1>Appartamento 2</h1><p>Scopri gli spazi della struttura e dell'appartamento.</p><div class="license-badges"><span><strong>CIN</strong> IT097043B4OR9DH700</span><span><strong>CIR</strong> 097043-LIM-00006</span></div></div></div>
+  <div class="container stay-details"><div><p class="eyebrow">Servizi</p><h2>Comfort per il tuo soggiorno</h2><ul class="amenities"><li>WiFi gratuito</li><li>Aria condizionata e riscaldamento</li><li>Bagno privato</li><li>Angolo cottura con utensili</li><li>TV a schermo piatto</li><li>Giardino e area esterna</li></ul></div><div class="rules-card"><p class="eyebrow">Informazioni utili</p><h3>Regole del soggiorno</h3><p>Check-in dalle 16:00 alle 18:00, da comunicare in anticipo. Bambini di ogni età benvenuti; culla gratuita su richiesta da 0 a 3 anni, soggetta a disponibilità.</p><p>Non sono ammessi fumatori, feste o animali. Le condizioni di cancellazione dipendono dalla soluzione e dalle date scelte.</p><a class="btn" href="https://www.booking.com/hotel/it/la-bella-e-la-bestia-lierna.it.html" target="_blank" rel="noopener">Verifica disponibilità</a></div></div>
+  <div class="container apartment-gallery-section"><div class="section-head"><div><p class="eyebrow">Galleria fotografica</p><h2>Gli spazi</h2></div><p class="gallery-note">Cortile, camera e bagno</p></div><div class="photo-gallery">
+    <figure><img src="images/cortile-ingressi.jpg" alt="Ingresso degli appartamenti e cortile" loading="lazy"><figcaption>Il cortile</figcaption></figure><figure><img src="images/ingresso-struttura.jpg" alt="Ingresso della struttura La Bella e La Bestia" loading="lazy"><figcaption>L'ingresso</figcaption></figure><figure><img src="images/ingresso-vite.jpg" alt="Ingresso della struttura con la vite" loading="lazy"><figcaption>Dettagli dell'ingresso</figcaption></figure><figure><img src="images/cortile-fiori.jpg" alt="Fiori nel cortile della struttura" loading="lazy"><figcaption>Il cortile fiorito</figcaption></figure><figure><img src="images/cortile-scala.jpg" alt="Scala e area relax nel cortile" loading="lazy"><figcaption>Area esterna</figcaption></figure><figure><img src="images/cortile-aiuola.jpg" alt="Aiuola fiorita nell'area esterna" loading="lazy"><figcaption>Giardino</figcaption></figure><figure><img src="images/cortile-salottino.jpg" alt="Salottino esterno con ombrellone" loading="lazy"><figcaption>Salottino esterno</figcaption></figure><figure><img src="images/bagno-lavabo.jpg" alt="Lavabo del bagno" loading="lazy"><figcaption>Bagno</figcaption></figure><figure><img src="images/bagno-doccia.jpg" alt="Bagno con doccia e set di asciugamani" loading="lazy"><figcaption>Bagno con doccia</figcaption></figure><figure><img src="images/camera-letto.jpg" alt="Camera da letto matrimoniale" loading="lazy"><figcaption>Camera da letto</figcaption></figure><figure><img src="images/bagno-dettaglio.jpg" alt="Dettaglio del lavabo del bagno" loading="lazy"><figcaption>Dettagli del bagno</figcaption></figure><figure><img src="images/camera-tv.jpg" alt="Camera con televisione e aria condizionata" loading="lazy"><figcaption>Comfort in camera</figcaption></figure><figure class="photo-gallery-wide"><img src="images/camera-panoramica.jpg" alt="Vista panoramica della camera matrimoniale" loading="lazy"><figcaption>La camera</figcaption></figure><figure><img src="images/cortile-relax.jpg" alt="Area relax esterna nel cortile" loading="lazy"><figcaption>Relax all'aperto</figcaption></figure>
+  </div></div>
+</section>
+<section id="appartamento3" class="panel apartment-panel">
+  <div class="apartment-intro"><div class="container"><p class="eyebrow">Appartamento 3</p><h1>Appartamento 3</h1><p>Scopri gli spazi della struttura e dell'appartamento.</p><div class="license-badges"><span><strong>CIN</strong> IT097043B4POEXY7CK</span><span><strong>CIR</strong> 097043-LIM-00007</span></div></div></div>
+  <div class="container stay-details"><div><p class="eyebrow">Servizi</p><h2>Comfort per il tuo soggiorno</h2><ul class="amenities"><li>WiFi gratuito</li><li>Aria condizionata e riscaldamento</li><li>Bagno privato</li><li>Angolo cottura con utensili</li><li>TV a schermo piatto</li><li>Giardino e area esterna</li></ul></div><div class="rules-card"><p class="eyebrow">Informazioni utili</p><h3>Regole del soggiorno</h3><p>Check-in dalle 16:00 alle 18:00, da comunicare in anticipo. Bambini di ogni età benvenuti; culla gratuita su richiesta da 0 a 3 anni, soggetta a disponibilità.</p><p>Non sono ammessi fumatori, feste o animali. Le condizioni di cancellazione dipendono dalla soluzione e dalle date scelte.</p><a class="btn" href="https://www.booking.com/hotel/it/la-bella-e-la-bestia-lierna.it.html" target="_blank" rel="noopener">Verifica disponibilità</a></div></div>
+  <div class="container apartment-gallery-section"><div class="section-head"><div><p class="eyebrow">Galleria fotografica</p><h2>Gli spazi</h2></div><p class="gallery-note">Cortile, camera e bagno</p></div><div class="photo-gallery">
+    <figure><img src="images/cortile-ingressi.jpg" alt="Ingresso degli appartamenti e cortile" loading="lazy"><figcaption>Il cortile</figcaption></figure><figure><img src="images/ingresso-struttura.jpg" alt="Ingresso della struttura La Bella e La Bestia" loading="lazy"><figcaption>L'ingresso</figcaption></figure><figure><img src="images/ingresso-vite.jpg" alt="Ingresso della struttura con la vite" loading="lazy"><figcaption>Dettagli dell'ingresso</figcaption></figure><figure><img src="images/cortile-fiori.jpg" alt="Fiori nel cortile della struttura" loading="lazy"><figcaption>Il cortile fiorito</figcaption></figure><figure><img src="images/cortile-scala.jpg" alt="Scala e area relax nel cortile" loading="lazy"><figcaption>Area esterna</figcaption></figure><figure><img src="images/cortile-aiuola.jpg" alt="Aiuola fiorita nell'area esterna" loading="lazy"><figcaption>Giardino</figcaption></figure><figure><img src="images/cortile-salottino.jpg" alt="Salottino esterno con ombrellone" loading="lazy"><figcaption>Salottino esterno</figcaption></figure><figure><img src="images/bagno-lavabo.jpg" alt="Lavabo del bagno" loading="lazy"><figcaption>Bagno</figcaption></figure><figure><img src="images/bagno-doccia.jpg" alt="Bagno con doccia e set di asciugamani" loading="lazy"><figcaption>Bagno con doccia</figcaption></figure><figure><img src="images/camera-letto.jpg" alt="Camera da letto matrimoniale" loading="lazy"><figcaption>Camera da letto</figcaption></figure><figure><img src="images/bagno-dettaglio.jpg" alt="Dettaglio del lavabo del bagno" loading="lazy"><figcaption>Dettagli del bagno</figcaption></figure><figure><img src="images/camera-tv.jpg" alt="Camera con televisione e aria condizionata" loading="lazy"><figcaption>Comfort in camera</figcaption></figure><figure class="photo-gallery-wide"><img src="images/camera-panoramica.jpg" alt="Vista panoramica della camera matrimoniale" loading="lazy"><figcaption>La camera</figcaption></figure><figure><img src="images/cortile-relax.jpg" alt="Area relax esterna nel cortile" loading="lazy"><figcaption>Relax all'aperto</figcaption></figure>
+  </div></div>
+</section>
 </main>
 
 <footer>
@@ -104,7 +163,8 @@
   <div class="modal-backdrop" data-close-modal></div>
   <div class="modal-box legal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <button class="modal-close" data-close-modal aria-label="Chiudi">×</button>
-    <h2 id="privacy-title">PRIVACY POLICY</h2>
+    <div hidden>
+    <h2>PRIVACY POLICY</h2>
     <p><strong>Informativa estesa sui Cookie ai sensi dell’articolo 13 del Codice in materia di protezione dei dati personali</strong></p>
     <p><strong>Il sito La Bella e La Bestia non utilizza cookie di profilazione propri. I servizi di terze parti, come Google Maps, possono utilizzare tecnologie di tracciamento solo dopo il consenso dell'utente.</strong></p>
 
@@ -127,11 +187,28 @@
     <h3>Third-party websites</h3><p><strong>Third-party sites, present on La Bella e La Bestia, are not covered by this policy. La Bella e La Bestia Lierna declines any responsibility for them and refers to the information on the respective sites for the categories of cookies used and the processing of personal data.</strong></p>
     <h3>Use of Cookies by browser</h3><p>The user can manage cookie preferences through browser settings. In this way, he or she can prevent third parties from installing their cookies and can delete cookies that have been installed in the past. For more information on managing cookies through browsers, the user can consult the relevant help pages for Google Chrome, Mozilla Firefox, Safari, Internet Explorer and Opera.</p>
     <p class="policy-date">La presente privacy policy è aggiornata alla data del 7 Maggio 2024.<br>This privacy policy is updated as of May 7, 2024.</p>
+    </div>
+    <h2 id="privacy-title">Privacy e cookie</h2>
+    <p class="policy-date">Ultimo aggiornamento: 23 agosto 2026.</p>
+    <h3>Titolare del trattamento</h3>
+    <p>Il titolare del trattamento è il gestore di <strong>La Bella e La Bestia</strong>, Via alla Volta 10, 23827 Lierna (LC). Per ogni richiesta relativa ai dati personali puoi scrivere a <a href="mailto:ilgattoelavolpelierna@gmail.com">ilgattoelavolpelierna@gmail.com</a> o chiamare il <a href="tel:+393516576435">+39 351 657 6435</a>.</p>
+    <h3>Dati trattati e finalità</h3>
+    <p>Durante la navigazione il sito tratta i dati tecnici necessari alla sua visualizzazione e sicurezza. Se ci contatti tramite telefono, email o WhatsApp, i dati che comunichi sono trattati per rispondere alla richiesta e gestire eventuali attività precontrattuali o contrattuali. La base giuridica è l'esecuzione di misure precontrattuali richieste dall'interessato o del contratto; il consenso è richiesto solo per i servizi facoltativi indicati sotto.</p>
+    <p>I dati sono conservati per il tempo necessario a gestire la richiesta e, se nasce un rapporto contrattuale, per i tempi previsti dalla normativa applicabile. Non sono svolte attività di marketing, profilazione o analisi proprietaria attraverso questo sito.</p>
+    <h3>Cookie e preferenze</h3>
+    <p>Il sito utilizza cookie tecnici per memorizzare le preferenze dell'utente: <strong>lb_cookie_consent</strong> conserva la scelta relativa ai servizi facoltativi per 6 mesi; <strong>lb_theme</strong> conserva la preferenza di visualizzazione chiara o scura per 12 mesi. Questi cookie non sono usati per profilare l'utente e non richiedono consenso.</p>
+    <p>Il solo servizio facoltativo gestito dal banner è <strong>Google Maps</strong>. La mappa non viene caricata finché non presti il consenso; una volta attivata, Google può trattare dati e usare proprie tecnologie secondo la sua <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy</a>. Puoi modificare o revocare in ogni momento la scelta dal pulsante “Cookie”; la mappa viene rimossa quando revochi il consenso.</p>
+    <h3>Link a servizi esterni</h3>
+    <p>I collegamenti a Booking.com, WhatsApp, Google Maps e altri siti esterni sono normali link. Quando li apri, il trattamento dei dati avviene secondo le informative dei rispettivi gestori. Le prenotazioni effettuate su Booking.com sono gestite direttamente da Booking.com e non da questo sito.</p>
+    <h3>Destinatari e trasferimenti</h3>
+    <p>I dati possono essere trattati da fornitori tecnici che rendono possibile l'hosting o i servizi espressamente richiesti. L'uso volontario di Google Maps può comportare trattamenti da parte di Google, anche al di fuori dello Spazio Economico Europeo, secondo le garanzie e le condizioni indicate dal fornitore.</p>
+    <h3>I tuoi diritti</h3>
+    <p>Nei casi previsti dalla legge puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, nonché revocare il consenso senza pregiudicare la liceità del trattamento precedente. Puoi contattare il titolare ai recapiti indicati sopra e, se ritieni che il trattamento violi la normativa, proporre reclamo al <a href="https://www.garanteprivacy.it/" target="_blank" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
   </div>
 </div>
 
-<div class="cookie-banner" id="cookie-banner" hidden><div><strong>Cookie e privacy</strong><p>Utilizziamo solo tecnologie necessarie per il funzionamento del sito. I servizi facoltativi, come Google Maps, vengono attivati solo con il tuo consenso. <button class="cookie-link" data-modal="privacy-modal">Leggi la Cookie Policy</button></p></div><div class="cookie-actions"><button class="cookie-btn secondary" id="cookie-reject">Rifiuta facoltativi</button><button class="cookie-btn secondary" id="cookie-settings">Impostazioni</button><button class="cookie-btn primary" id="cookie-accept">Accetta tutti</button></div></div>
-<div class="cookie-settings" id="cookie-settings-panel" hidden><div class="cookie-settings-box"><button class="modal-close" id="cookie-settings-close">×</button><h2>Preferenze cookie</h2><p>Puoi modificare in ogni momento le tue preferenze. I cookie necessari non possono essere disattivati perché servono al funzionamento del sito.</p><div class="cookie-row"><div><strong>Necessari</strong><small>Memorizzazione della scelta cookie e funzioni essenziali.</small></div><span>Sempre attivi</span></div><div class="cookie-row"><div><strong>Servizi di terze parti</strong><small>Google Maps e altri contenuti esterni facoltativi.</small></div><label><input type="checkbox" id="cookie-thirdparty"> Consenti</label></div><div class="cookie-actions"><button class="cookie-btn primary" id="cookie-save">Salva preferenze</button></div></div></div>
+<div class="cookie-banner" id="cookie-banner" hidden><div><strong>Cookie e privacy</strong><p>Usiamo cookie necessari al funzionamento del sito. Google Maps è facoltativo e viene caricato solo se lo autorizzi. <button class="cookie-link" data-modal="privacy-modal">Leggi l'informativa</button></p></div><div class="cookie-actions"><button class="cookie-btn secondary" id="cookie-reject">Rifiuta Google Maps</button><button class="cookie-btn secondary" id="cookie-settings">Impostazioni</button><button class="cookie-btn primary" id="cookie-accept">Accetta Google Maps</button></div></div>
+<div class="cookie-settings" id="cookie-settings-panel" hidden><div class="cookie-settings-box"><button class="modal-close" id="cookie-settings-close">×</button><h2>Preferenze cookie</h2><p>Puoi modificare in ogni momento le tue preferenze. I cookie necessari non possono essere disattivati perché servono al funzionamento del sito.</p><div class="cookie-row"><div><strong>Necessari</strong><small>Memorizzazione della scelta cookie e della preferenza di visualizzazione.</small></div><span>Sempre attivi</span></div><div class="cookie-row"><div><strong>Google Maps</strong><small>Carica la mappa interattiva di Google, un servizio facoltativo di terza parte.</small></div><label><input type="checkbox" id="cookie-thirdparty"> Consenti</label></div><div class="cookie-actions"><button class="cookie-btn primary" id="cookie-save">Salva preferenze</button></div></div></div>
 <div class="cookie-reopen" id="cookie-reopen"><button type="button">Cookie</button></div>
 <script src="script.js"></script>
 </body>
