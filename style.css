@@ -189,7 +189,7 @@ body.dark-theme .theme-switch:before {
   align-items: center;
   transition: background-image .25s ease;
 }
-.hero-content { max-width: 1180px; width: 100%; margin: auto; padding: 80px 24px; color: var(--heading); }
+.hero-content { max-width: 1180px; width: 100%; margin: auto; padding: 80px 24px; color: #fff; }
 .hero h1, .empty-content h1 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(48px, 7vw, 86px);
