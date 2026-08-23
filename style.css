@@ -322,9 +322,6 @@ body.dark-theme .map-consent {
 .apartment-intro h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 7vw, 78px); line-height: 1.02; margin: 10px 0; color: #fff; text-shadow: 0 2px 16px rgba(0, 0, 0, .45); }
 .apartment-intro p:not(.eyebrow) { max-width: 570px; margin: 0; color: rgba(255, 255, 255, .92); font-size: 18px; text-shadow: 0 1px 10px rgba(0, 0, 0, .48); }
 .apartment-intro .eyebrow { color: #f3ce99; text-shadow: 0 1px 8px rgba(0, 0, 0, .55); }
-.license-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
-.license-badges span { background: rgba(4, 19, 26, .68); border: 1px solid rgba(255, 255, 255, .28); border-radius: 999px; padding: 8px 13px; color: #fff; font-size: 13px; }
-.license-badges strong { color: #f3ce99; margin-right: 7px; letter-spacing: .06em; }
 .apartment-gallery-section { padding-top: 60px; }
 .stay-details { display: grid; grid-template-columns: 1.15fr .85fr; gap: 55px; padding-top: 60px; padding-bottom: 0; }
 .stay-details h2 { font-family: 'Playfair Display', serif; font-size: 38px; line-height: 1.15; margin: 6px 0 20px; color: var(--heading); }
@@ -348,6 +345,10 @@ footer { background: var(--footer-bg); color: var(--footer-text); padding: 40px 
 .footer-main { display: flex; flex-direction: column; gap: 5px; }
 .footer-inner { padding-top: 0; padding-bottom: 25px; display: flex; justify-content: space-between; }
 .footer-links { display: flex; align-items: flex-start; gap: 22px; }
+
+.apartment-license-footer { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 0; padding-bottom: 60px; margin-top: -30px; }
+.apartment-license-footer span { background: var(--surface-2); border: 1px solid var(--line-soft); border-radius: 999px; padding: 4px 10px; font-size: 11px; color: var(--text-muted); }
+.apartment-license-footer strong { color: var(--accent); margin-right: 4px; letter-spacing: .04em; font-weight: 600; }
 .footer-link { border: 0; background: none; color: var(--footer-text); padding: 0; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .footer-link:hover { color: var(--accent); }
 .copyright { border-top: 1px solid rgba(128, 128, 128, .2); padding: 18px 24px 0; text-align: center; font-size: 12px; color: var(--text-muted); }
