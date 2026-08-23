@@ -20,7 +20,7 @@
   --surface-2: #f5f1e9;
   --text: #17313a;
   --text-muted: #6c7779;
-  --heading: #17313a;
+  --heading: #fff;
   --line: #ded8cc;
   --line-soft: rgba(23, 49, 58, .12);
   --header-bg: rgba(255, 253, 249, .94);
@@ -43,7 +43,7 @@ body.dark-theme {
   --surface-2: #25251f;
   --text: #e9e4d5;
   --text-muted: #9db2aa;
-  --heading: #e8e1cc;
+  --heading: #fff;
   --line: rgba(135, 185, 192, .18);
   --line-soft: rgba(135, 185, 192, .15);
   --header-bg: rgba(18, 20, 17, .96);
