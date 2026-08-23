@@ -312,13 +312,19 @@ body.dark-theme .map-consent {
 .map-consent p { max-width: 600px; color: var(--text-muted); }
 
 /* -------------------- Appartamenti e gallerie -------------------- */
-.apartment-intro { background: linear-gradient(125deg, var(--bg-alt), var(--surface)); border-bottom: 1px solid var(--line-soft); }
+.apartment-intro {
+  background-image: linear-gradient(90deg, rgba(5, 19, 28, .84), rgba(5, 19, 28, .45)), url("images/hero-lago-di-como-bruce-meier.jpg");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid var(--line-soft);
+}
 .apartment-intro .container { padding-top: 68px; padding-bottom: 58px; }
-.apartment-intro h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 7vw, 78px); line-height: 1.02; margin: 10px 0; color: var(--heading); }
-.apartment-intro p:not(.eyebrow) { max-width: 570px; margin: 0; color: var(--text-muted); font-size: 18px; }
+.apartment-intro h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 7vw, 78px); line-height: 1.02; margin: 10px 0; color: #fff; text-shadow: 0 2px 16px rgba(0, 0, 0, .45); }
+.apartment-intro p:not(.eyebrow) { max-width: 570px; margin: 0; color: rgba(255, 255, 255, .92); font-size: 18px; text-shadow: 0 1px 10px rgba(0, 0, 0, .48); }
+.apartment-intro .eyebrow { color: #f3ce99; text-shadow: 0 1px 8px rgba(0, 0, 0, .55); }
 .license-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
-.license-badges span { background: var(--surface); border: 1px solid var(--line-soft); border-radius: 999px; padding: 8px 13px; color: var(--text-muted); font-size: 13px; }
-.license-badges strong { color: var(--heading); margin-right: 7px; letter-spacing: .06em; }
+.license-badges span { background: rgba(4, 19, 26, .68); border: 1px solid rgba(255, 255, 255, .28); border-radius: 999px; padding: 8px 13px; color: #fff; font-size: 13px; }
+.license-badges strong { color: #f3ce99; margin-right: 7px; letter-spacing: .06em; }
 .apartment-gallery-section { padding-top: 60px; }
 .stay-details { display: grid; grid-template-columns: 1.15fr .85fr; gap: 55px; padding-top: 60px; padding-bottom: 0; }
 .stay-details h2 { font-family: 'Playfair Display', serif; font-size: 38px; line-height: 1.15; margin: 6px 0 20px; color: var(--heading); }
@@ -345,6 +351,7 @@ footer { background: var(--footer-bg); color: var(--footer-text); padding: 40px 
 .footer-link { border: 0; background: none; color: var(--footer-text); padding: 0; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .footer-link:hover { color: var(--accent); }
 .copyright { border-top: 1px solid rgba(128, 128, 128, .2); padding: 18px 24px 0; text-align: center; font-size: 12px; color: var(--text-muted); }
+.photo-credit { display: inline-block; margin-top: 4px; font-size: 10px; opacity: .78; }
 
 /* -------------------- Modali (contatti, privacy) -------------------- */
 .modal { display: none; position: fixed; inset: 0; z-index: 100; }
